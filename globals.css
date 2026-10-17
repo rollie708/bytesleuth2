@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+:root {
+  --radius: 0.5rem;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-primary {
+  color: #a78bfa;
+}
+
+.text-muted-foreground {
+  color: #6b7280;
+}
+
+.border-border {
+  border-color: #3f3f46;
+}
+
+.btn-primary {
+  background-color: #a78bfa;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #9375ed;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #a78bfa;
+  border: 1px solid #a78bfa;
+}
+
+.btn-secondary:hover {
+  background-color: #a78bfa;
+  color: #000;
+}
+
+.input {
+  background-color: #18181b;
+  border: 1px solid #3f3f46;
+  color: #fff;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #a78bfa;
+  box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.1);
+}
+
+/* Card styles */
+.card {
+  background-color: #18181b;
+}
+
+/* Table styles */
+.table {
+  width: 100%;
+}
+
+ th,
+ td {
+  padding: 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid #3f3f46;
+}
+
+/* Animations */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fade-in 0.3s ease-out forwards;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
